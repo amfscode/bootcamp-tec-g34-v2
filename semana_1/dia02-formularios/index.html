@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+    <header></header>
+    <main class="container">
+        <h1>Formularios + inputs</h1>
+        <form>
+            <h2>Inputs</h2>
+            <!-- <label >Input tipo texto</label> -->
+            <label for="input1" >Input tipo texto</label>
+            <input id="input1">
+        </form>
+
+        <!-- una forma de usar label -->
+        <form >
+            <h2>Inputs</h2>
+            <label for="input1" >Input tipo texto</label>
+            <input id="input1" placeholder="enter password">
+        </form>
+
+        <form >
+            <h2>Inputs</h2>
+            <label for="input1" >Input tipo texto</label>
+            <input id="input1" placeholder="enter password">
+
+            <!-- otra manera de usar el label -->
+            <label>
+                input (solo lectura)
+                <input />
+            </label>
+        </form>
+
+        <form >
+            <h2>Inputs</h2>
+            <label for="input1" >Input tipo texto</label>
+            <input id="input1" placeholder="enter password">
+
+            <!-- otra manera de usar el label -->
+            <label>
+                input (solo lectura)
+                <input readonly/> <!-- bloquear entrada-->
+            </label>
+            <label>
+                input (desactivado)
+                <input disabled placeholder="Input desactivado" type="text"/> <!-- bloquear entrada-->
+            </label>
+
+            <label>
+                input (numero)
+                <input placeholder="Edad Ej. 18" type="number" min="18" max="" />
+            </label>
+            <label>
+                input (email)
+                <input placeholder="Correo El correo@hot.com"  type="email"/>
+            </label>
+            <label>
+                input (rango)
+                <input type="range" min="0" max="100" step="10"/>
+            </label>
+            <label>
+                input (telefono)
+                <input type="tel" placeholder="(+51 )"/>
+            </label>
+            <label>
+                input (url)
+                <input type="url" placeholder="ej. mmm.com"/>
+            </label>
+            <label>
+                input (password)
+                <input type="password" placeholder="password "/>
+            </label>
+            <label>
+                input (tipo color)
+                <input type="color"/>
+            </label>
+            <label>
+                input (busqueda)
+                <input type="search"/>
+            </label>
+            <label>
+                input (selecionar un archivo) ej. png
+                <input type="file" accept=".png"/>
+            </label>
+            <label>
+                input (selecionar multiples archivos)
+                <input type="file" multiple accept="pdf"/>
+            </label>
+            <label>
+                input (datos ocultos)
+                <input type="hidden" />
+            </label>
+            <label>
+                input (guardar cambios)
+                <input type="submit" value="Guadar" />
+            </label>
+            <label>
+                input (guardar cambios)
+                <input type="button" value="soy un boton" />
+            </label>
+            <form>
+                <h2>Input tipo fecha</h2>
+
+                <label>
+                    input fecha y hora
+                    <input type="datetime-local">
+                </label>
+                <label>
+                    input fecha y hora
+                    <input type="date">
+                </label>
+                <label>
+                    input fecha y hora
+                    <input type="time">
+                </label>
+                <label>
+                    input fecha y hora
+                    <input type="week">
+                </label>
+                <label>
+                    input fecha y hora
+                    <input type="month">
+                </label>
+
+            </form>
+        </form>
+    </main>
+</body>
+</html>
