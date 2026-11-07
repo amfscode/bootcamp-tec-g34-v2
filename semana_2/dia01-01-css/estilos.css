@@ -1,3 +1,31 @@
-body {
-    
+/* body {
+    background-color: rgb(61, 81, 119);
+} */
+
+p {
+    color: blue;
+    background-color: chartreuse;
+    font-size: 20px;
+}
+h1 {
+    color: blue;
+    background-color: chartreuse;
+    font-size: 50px;
+}
+h3 {
+    color: blue;
+    background-color: rgb(247, 233, 109);
+    font-size: 50px;
+}
+
+#estado {
+    background-color: rgb(99, 120, 240);
+}
+
+.btn {
+    background-color: rgb(202, 212, 255);
+}
+
+.texto-resaltado {
+    color: rgb(150, 29, 29);
 }
