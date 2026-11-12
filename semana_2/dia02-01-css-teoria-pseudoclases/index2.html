@@ -6,6 +6,27 @@
     <title>Document</title>
     <style>
 
+        h2 {
+        color: tomato;
+        color: #ff6347;
+        color: rgb(255, 99, 71);
+        color: hsl(9, 100%, 64%);
+        }
+
+        h1 {
+            /* tranparencia */
+            background-color: rgba(71, 96, 126, 0.5);
+        }
+
+        button {
+            background-color: hsl(249, 50%, 58%);
+        }
+
+        button:hover {
+            /* al ubicar el mouse encima cambia de color */
+            background-color: hsl(231, 48%, 75%);
+        }
+
         /* CASCADA */
         header {
         color: green;
@@ -40,7 +61,7 @@
           }
 
         .portada {
-  height: 100vh; /* Todo el alto de la ventana */
+  height: 20vh; /* Todo el alto de la ventana */
   background-color: lightblue;
 }
 
@@ -53,12 +74,18 @@
     </style>
 </head>
 <body>
+    <button>AMFS</button>
+
     <section class="portada">
     <div class="caja">Mido la mitad de mi padre</div>
     </section>
+
     <header id="cabecera" class="texto">¿De qué color soy?</header>
     <p>¿Rojo o azul? Gana la regla escrita al final.</p>
     <h1>Mido 2rem</h1>
     <p>Yo mido 1rem: el tamaño por defecto del navegador.</p>
+    <h2>Soy color tomate</h2>
+    <p>Borra tres de las cuatro líneas de color: el título se verá igual.</p>
+    <h1>Fiorela</h1>
 </body>
 </html>
