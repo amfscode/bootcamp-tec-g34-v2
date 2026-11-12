@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* CASCADA */
+        header {
+        color: green;
+        }
+
+        .texto {
+        color: red;
+        }
+
+        /* otra manera */
+        #cabecera {
+        color: rgb(19, 146, 108);
+        }
+
+        p {
+        color: red;
+        }
+
+        p {
+        color: blue; /* Gana esta */
+        }
+
+        /* UNIDADES DE MEDIDA */
+
+        /*
+        uni. Absolutas: px, cm ,in
+        unid. RElativas: em, rem, %, vw, vh (modernas y flexibles)
+        */
+
+        h1 {
+         font-size: 2rem; /* 32px con el tamaño por defecto */
+          }
+
+        .portada {
+  height: 100vh; /* Todo el alto de la ventana */
+  background-color: lightblue;
+}
+
+.caja {
+  width: 50%;
+  background-color: gold;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="portada">
+    <div class="caja">Mido la mitad de mi padre</div>
+    </section>
+    <header id="cabecera" class="texto">¿De qué color soy?</header>
+    <p>¿Rojo o azul? Gana la regla escrita al final.</p>
+    <h1>Mido 2rem</h1>
+    <p>Yo mido 1rem: el tamaño por defecto del navegador.</p>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Teoria</title>
+  <style>
+
+    /* Pseudo clases */
+
+    button {
+      background-color: tomato;
+    }
+
+    button:hover {
+      background-color: seagreen;
+      cursor: pointer;
+    }
+
+    input:focus {
+      outline: 3px solid gold;
+    }
+
+    button:disabled {
+      background-color: lightgray;
+    }
+
+    input:checked {
+      outline: 2px solid red;
+    }
+
+    /* Seudo elementos */
+
+        .tip::before {
+    content: "AMFS💡 ";
+    }
+
+    .obligatorio::after {
+    content: " *";
+    color: red;
+    }
+    ::selection{
+        background-color: rgb(14, 211, 31);
+        color: blue;
+    }
+
+    /* SELECTORES COMBINDOS */
+
+    /* selectores desendintes - NO USARLO */
+
+    article p {
+        border: 1px solid red;
+    }
+
+    /* SELECTORES DE HIJO MAYOR - NO USARLO */*/
+    article > strong{
+        color: red;
+    }
+    /* SELECTOR DE HERMANO ADYACENTE */
+    h2 + p {
+        font-weight: bold;
+        color: orange;
+    }
+
+    /* SELECTORE MULTIPLES */
+    h1, h2, h3 {
+        background-color: chartreuse;
+    }
+    /* Herencia */
+    article {
+        color: aqua;
+    }
+
+    body {
+        color: darkblue;
+    }
+
+    a, button {
+        color: indianred;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudoclases</h1>
+
+  <p>Pasa el cursor por el botón y haz clic en el campo.</p>
+  <input type="text" placeholder="Escribe aquí" />
+  <button>Enviar</button>
+  <button disabled>No disponible</button>
+  <input type="checkbox"> Apagado
+  <h1>Pseudoclases</h1>
+  <p class="tip">Guarda tus archivos con frecuencia.</p>
+  <p class="obligatorio">Correo</p>
+
+  <input type="text" placeholder="Holaa">
+
+  <h1>Selectores combinados</h1>
+  <article>
+    <h2>Bienvenido</h2>
+    <p>Mi perrafo</p>
+    <p>segundo parrafo <strong>TEXto importante</strong>.</p>
+  </article>
+</body>
+</html>
