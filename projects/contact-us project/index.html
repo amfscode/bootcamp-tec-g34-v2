@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -14,7 +14,6 @@
     <h1>Contact Us</h1>
 
     <form>
-
       <div class="row">
         <label>
           First Name
@@ -23,27 +22,29 @@
 
         <label>
           Last Name
-          <input type="text" name="last-name">
+          <input type="text" name="last_name">
         </label>
       </div>
 
       <label>
         Email Address
-        <input type="text" name="email">
+
+        <input type="email" name="email">
       </label>
 
       <div>
         Query Type
 
-        <div>
-            <label>
-                <input type="radio" name="query_type">
-                General Enquiry
-            </label>
-            <label class="query_type">
-                <input type="radio" name="query_type">
-                Support Request
-            </label>
+        <div class="row">
+          <label class="query-type">
+            <input type="radio" name="query_type">
+            General Enquiry
+          </label>
+          <label class="query-type">
+            <input type="radio" name="query_type">
+            Support Request
+          </label>
+
         </div>
       </div>
 
@@ -53,7 +54,7 @@
       </label>
 
       <label>
-        <input type="checkbox" name="consent">
+        <input type="checkbox" name="consent" />
         I consent to being contacted by the team
       </label>
 

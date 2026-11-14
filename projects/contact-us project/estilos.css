@@ -74,11 +74,11 @@ input[type=submit] {
 /* TODO: Darle estilos al query type del formulario */
 
 .query-type {
-    border: 1px solid hsl(186, 15%, 59%);
-    padding: 16px;
-    margin-top: 8px;
-    border-radius: 8px;
-    display: flex;
-    gap: 4px;
+  border: 1px solid hsl(186, 15%, 59%);
+  padding: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
 
+  display: flex;
+  gap: 4px;
 }
