@@ -174,7 +174,7 @@ h1 {
   align-self: flex-start;
 }
 
-/* TODO: Terminar la maquetación con html y estilos a la sección testimonials */
+/* TODO: Terminar la maquetación con html y estilos a la /* TODO: Terminar la maquetación con html y estilos a la sección testimonials */
 
 .testimonials {
   /* border: 1px solid yellow; */
@@ -187,27 +187,50 @@ h1 {
   margin: 0 auto;
 }
 
-.testimonial {
+/*
+TAMAÑOS DE PANTALLA SUGERIDOS:
 
-    background-color: #21293c;
-    border-radius: 20px;
-    padding: 2rem;
+576px  -> pantallas pequeñas (celulares)
+768px  -> pantallas pequeñas (tablets y celulares)
+992px  -> pantallas medianas (Desktop)
+1280px -> pantallas grandes (Desktops, TVs)
+*/
+
+/* MEDIA QUERY: Se aplica a dispositivos móviles, tables o desktops */
+
+@media (min-width: 992px) {
+  .testimonial {
+    flex-direction: row;
+  }
 }
 
- .testimonial__profile {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding-top: 1rem;
+.testimonial {
+  /* border: 1px solid red; */
+  padding: 2rem;
+
+  background-color: hsl(219, 30%, 18%);
+
+  border-radius: .5rem;
+}
+
+.testimonial__text {
+  font-size: 1.4rem;
+
+  margin-bottom: 2rem;
+}
+
+.testimonial__profile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
 }
 
 .testimonial__avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
+  border-radius: 50%;
 }
-
 
 .testimonial__user h4 {
   font-weight: 700;
@@ -216,4 +239,24 @@ h1 {
 
 .testimonial__user h5 {
   font-weight: 400;
-  }
+}
+
+.footer{
+    display: flex;
+    align-items:center;
+    gap: ;
+      -direction: column;
+    gap: 3rem;
+
+    width: min(100% - 6rem, 1440px);
+    margin: 0 auto;
+}
+
+
+
+
+}
+
+footer--wrapper wrapper
+
+footer-info__description
